@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Change Image on Hover in CSS</title>
+<style>
+    .card {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        display: inline-block;
+        margin: 50px;
+    }
+
+    .card .img-top {
+    
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .card:hover .img-top {
+        width: 200px;
+        height: 200px;
+        display: inline;
+    }
+</style>
+</head>
+<body>
+    <div class="card">
+    	<img src="discord-2.png" alt="Card Back"class="ind">
+        <img src="discord3.png" class="img-top" alt="Card Front">
+    </div>
+</body>
+</html>
