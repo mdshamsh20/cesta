@@ -1,0 +1,131 @@
+:root{
+    --main-color:#d3ad7f;
+    --white:#fff;
+    --bg:black;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+
+section{
+    padding:2rem 7%;
+}
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    background:var(--black);
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex:1 1 45rem;
+    margin: 25px 10px;
+}
+
+.about .row .image img{
+    width: 100%;
+    
+}
+.about .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color:#fff;
+}
+
+.about .row .content p{
+    font-size: 1.3rem;
+    color:#ccc;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+.about .row .content h4{
+    font-size: 2rem;
+    color:#fff;
+}
+.about .row .content ul{
+    font-size: 1.2rem;
+    color:#ccc;
+}
+.about .row .content .btn{
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 8px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.about .row .content .btn span{
+    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s
+}
+.about .row .content .btn span:after{
+    content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.about .row .content .btn:hover span{
+    padding-right: 25px;
+}
+.about .row .content .btn:hover span{
+    opacity: 1;
+    right: 0;
+}
