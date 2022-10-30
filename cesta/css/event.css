@@ -1,0 +1,120 @@
+:root{
+    --main-color:#d3ad7f;
+    --white:#fff;
+    --bg:black;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+
+section{
+    padding:2rem 7%;
+}
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+.events .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.events .box-container .box{
+    padding:10rem;
+    text-align: center;
+    border:var(--border);  
+    border-radius: 8px;  
+}
+
+.events .box-container .box img{
+    height: 14rem;
+    clip-path: ellipse(50%)
+}
+
+.events .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
+.events .box-container .box .description{
+    color: #fff;
+    font-size: 2.5rem;
+    padding:.5rem 0;
+}
+
+.events .box-container .box .description span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.events .box-container .box:hover{
+    background:gray;
+}
+
+.events .box-container .box:hover > *{
+    color:var(--black);
+}
+.events .box-container .box .btn{
+    
+    padding: 10px 20px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+.events .box-container .box .btn:hover{
+    background-color: #3e8e41
+    
+}
+.events .box-container .box .btn:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
